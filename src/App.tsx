@@ -1,12 +1,7 @@
 import React, { useState, ChangeEvent, useEffect } from 'react';
 
-import * as pdfjsLib from "pdfjs-dist";
-import { WorkerMessageHandler } from "pdfjs-dist/build/pdf.worker.mjs";
-
 import { PDFViewer } from './pdf-viewer';
 import './App.css';
-
-pdfjsLib.GlobalWorkerOptions.workerSrc = WorkerMessageHandler;
 
 const worker = new Worker(new URL('./pdf-worker.js', import.meta.url), { type: 'module' });
 

@@ -1,46 +1,26 @@
-# Getting Started with Create React App
+# PDF Processing in React with Web Workers
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project demonstrates a practical approach to processing and rendering PDF documents in a React application. It leverages Web Workers to offload the heavy lifting of PDF processing, ensuring the UI remains responsive. The application allows users to upload PDF files and view them within the browser, rendering pages in batches for efficiency.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Batch Processing**: PDF pages are processed and rendered in batches to improve load times and application responsiveness.
+- **Web Worker Integration**: Offloads PDF processing to a background thread, preventing UI freezes during heavy computations.
+- **React-based UI**: Utilizes React for a dynamic and responsive user interface.
+- **PDF.js Library**: Leverages the powerful `pdfjs-dist` library for handling PDF files.
 
-### `npm start`
+## Future Enhancements
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **Dynamic Page Prioritization**: *(To be implemented)* Dynamically adjust the processing priority of PDF pages based on user interactions, such as scrolling. This will ensure that pages in the user's viewport or near it are rendered first for a smoother reading experience.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started
 
-### `npm test`
+### Prerequisites
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Ensure you have Node.js (version 12 or higher) installed on your system to manage project dependencies and run the development server.
 
-### `npm run build`
+### Installation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/OptimusRahul/pdf-processing.git
