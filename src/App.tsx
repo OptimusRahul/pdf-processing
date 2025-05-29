@@ -14,6 +14,7 @@ const App: React.FC = () => {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [pageBase64, setPageBase64] = useState<string[]>([]);
 
+  console.log('this is just for redeployment');
   const handleFallback = useCallback(async (pageIndex: number) => {
     const arrayBuffer = await (selectedFile as File).arrayBuffer();
 
